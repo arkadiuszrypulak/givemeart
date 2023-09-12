@@ -19,12 +19,22 @@ module.exports = {
       },
       colors: {
         "main-red": "#CE2B28",
+        "button-red": "#CB2B28",
         "line-gray": "#E5E5E7",
         "text-gray": "#9C9C9C",
         "search-bg": "#F5F5F6",
+        "lighter-bg": "#E3E4E7",
+        lightgray: "#fcfcfd",
+        lightBlack: "#2E2727",
+        semiLightBlack: "#1E1E1E",
       },
       boxShadow: {
         customShadow: "1px 2px 5px 0px #C0C1C9",
+        insetShadow: "4px 4px 10px 0px rgba(64, 53, 53, 0.49) inset",
+        biggerShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
+      dropShadow: {
+        biggerShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       },
     },
   },

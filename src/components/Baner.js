@@ -14,7 +14,7 @@ function Baner() {
         <Image priority src={logo} alt="Logo Give me Art" />
         <p>
           Generate your ART by typing in field below any words that comes to
-          your mind!
+          your mind !
         </p>
       </div>
       <div className="flex">

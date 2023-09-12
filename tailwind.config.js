@@ -23,6 +23,9 @@ module.exports = {
         "text-gray": "#9C9C9C",
         "search-bg": "#F5F5F6",
       },
+      boxShadow: {
+        customShadow: "1px 2px 5px 0px #C0C1C9",
+      },
     },
   },
   plugins: [],

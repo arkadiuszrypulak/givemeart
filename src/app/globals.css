@@ -7,7 +7,9 @@
 }
 
 body {
-  background: var(--bg);
+  background-image: url("../../public/images/Layer_BG.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .artisticShadow {
@@ -16,10 +18,10 @@ body {
 
 @layer components {
   .progressBarRed {
-    @apply relative w-1/3 h-1 rounded bg-main-red flex justify-center items-center;
+    @apply relative w-1/3 h-1  bg-main-red flex justify-center items-center cursor-pointer;
   }
   .progressBarGray {
-    @apply relative w-1/3 rounded-r h-1 bg-line-gray flex justify-center items-center;
+    @apply relative w-1/3 rounded-r h-1 bg-line-gray flex justify-center items-center cursor-pointer;
   }
   .progressBarRedNumber {
     @apply absolute flex items-center justify-center text-white h-5 w-5 rounded bg-main-red -top-2 left-1/2 transform -translate-x-1/2;
@@ -35,5 +37,8 @@ body {
   }
   .progressBarGrayText {
     @apply text-center text-line-gray text-sm font-medium;
+  }
+  .typesBox {
+    @apply bg-search-bg rounded-lg py-3 w-1/3 text-center text-sm flex items-center justify-center transition  duration-300 hover:bg-lighter-bg;
   }
 }

@@ -8,6 +8,10 @@ import { Divide as Hamburger } from "hamburger-react";
 import heart from "../../public/images/heart.svg";
 import user from "../../public/images/user.svg";
 import cart from "../../public/images/cart.svg";
+//framer
+import { motion } from "framer-motion";
+//effects
+import { fadeIn } from "@/fadeIn";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +40,14 @@ function Nav() {
 
   return (
     <nav className="h-16 w-mobile-width mx-auto flex items-center justify-between">
-      <Hamburger toggle={setIsOpen} toggled={isOpen} />
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+      >
+        <Hamburger toggle={setIsOpen} toggled={isOpen} />
+      </motion.div>
 
       {isOpen && (
         <div
@@ -45,7 +56,13 @@ function Nav() {
         />
       )}
 
-      <div className="absolute top-5 right-5 flex items-center gap-3">
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="absolute top-5 right-5 flex items-center gap-3"
+      >
         <Image
           className="cursor-pointer"
           priority
@@ -54,24 +71,36 @@ function Nav() {
         />
         <Image className="cursor-pointer" priority src={cart} alt="Cart icon" />
         <Image className="cursor-pointer" priority src={user} alt="User icon" />
-      </div>
+      </motion.div>
 
       <div
         className={`${
           isOpen
             ? "fixed opacity-1 translate-y-0"
-            : "opacity-0 translate-y-[500px]"
+            : "opacity-0 translate-y-[1000px]"
         } top-0 left-0 w-full h-1/2 bg-white z-20 transform transition-transform duration-300 ease-in-out`}
       >
-        <div className="absolute top-3 left-5">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="absolute top-3 left-5"
+        >
           <Hamburger toggle={setIsOpen} toggled={isOpen} />
-        </div>
+        </motion.div>
 
         <ul className="flex flex-col items-center justify-center h-full space-y-6">
           {menu.map((el) => (
-            <li key={el.id}>
+            <motion.li
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
+              key={el.id}
+            >
               <a href={el.href}>{el.name}</a>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

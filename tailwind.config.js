@@ -11,9 +11,6 @@ module.exports = {
         openSans: ["var(--font-openSans)"],
         raleway: ["var(--font-raleway)"],
       },
-      backgroundImage: {
-        "hero-pattern": "url('/images/Layer_BG.png')",
-      },
       width: {
         "mobile-width": "350px",
       },

@@ -8,9 +8,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <section className="relative w-full min-h-screen ">
-      <div className="bg-hero-pattern bg-no-repeat absolute -z-50 top-0 -right-6 w-full h-full"></div>
-
+    <section className="relative w-full">
       <Nav />
       <Baner />
       <Search />

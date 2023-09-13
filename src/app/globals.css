@@ -13,3 +13,27 @@ body {
 .artisticShadow {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+@layer components {
+  .progressBarRed {
+    @apply relative w-1/3 h-1 rounded bg-main-red flex justify-center items-center;
+  }
+  .progressBarGray {
+    @apply relative w-1/3 rounded-r h-1 bg-line-gray flex justify-center items-center;
+  }
+  .progressBarRedNumber {
+    @apply absolute flex items-center justify-center text-white h-5 w-5 rounded bg-main-red -top-2 left-1/2 transform -translate-x-1/2;
+  }
+  .progressBarGrayNumber {
+    @apply absolute flex items-center justify-center text-text-gray h-5 w-5 rounded bg-line-gray -top-2 left-1/2 transform -translate-x-1/2;
+  }
+  .progressBarDesc {
+    @apply absolute flex items-center justify-center transform top-5 left-1/2 -translate-x-1/2;
+  }
+  .progressBarRedText {
+    @apply text-center text-main-red text-sm font-semibold;
+  }
+  .progressBarGrayText {
+    @apply text-center text-line-gray text-sm font-medium;
+  }
+}

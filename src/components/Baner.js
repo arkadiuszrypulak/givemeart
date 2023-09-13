@@ -33,35 +33,29 @@ function Baner() {
         </p>
       </div>
       <div className={`${raleway.variable} font-raleway flex w-[90vw]`}>
-        <div className="relative w-1/3 h-1 rounded bg-main-red flex justify-center items-center">
-          <div className="absolute flex items-center justify-center text-white h-5 w-5 rounded bg-main-red -top-2 left-1/2 transform -translate-x-1/2 ">
+        <div className="progressBarRed">
+          <div className="progressBarRedNumber">
             <span>1</span>
           </div>
-          <div className="absolute flex items-center justify-center transform top-5 left-1/2 -translate-x-1/2">
-            <span className="text-center text-main-red text-sm font-semibold">
-              Generate image
-            </span>
+          <div className="progressBarDesc">
+            <span className="progressBarRedText">Generate image</span>
           </div>
         </div>
 
-        <div className="relative w-1/3 h-1 bg-line-gray flex justify-center items-center">
-          <div className="absolute flex items-center justify-center text-text-gray h-5 w-5 rounded bg-line-gray -top-2 left-1/2 transform -translate-x-1/2 ">
+        <div className="progressBarGray">
+          <div className="progressBarGrayNumber">
             <span>2</span>
           </div>
-          <div className="absolute flex items-center justify-center transform top-5 left-1/2 -translate-x-1/2">
-            <span className="text-center text-line-gray text-sm font-medium">
-              Choose your product
-            </span>
+          <div className="progressBarDesc">
+            <span className="progressBarGrayText">Choose your product</span>
           </div>
         </div>
-        <div className="relative w-1/3 rounded-r h-1 bg-line-gray flex justify-center items-center">
-          <div className="absolute flex items-center justify-center text-text-gray h-5 w-5 rounded bg-line-gray -top-2 left-1/2 transform -translate-x-1/2 ">
+        <div className="progressBarGray">
+          <div className="progressBarGrayNumber">
             <span>3</span>
           </div>
-          <div className="absolute flex items-center justify-center transform top-5 left-1/2 -translate-x-1/2">
-            <span className="text-center text-line-gray text-sm font-medium">
-              Order
-            </span>
+          <div className="progressBarDesc">
+            <span className="progressBarGrayText">Order</span>
           </div>
         </div>
       </div>

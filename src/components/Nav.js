@@ -46,16 +46,21 @@ function Nav() {
       )}
 
       <div className="absolute top-5 right-5 flex items-center gap-3">
-        <Image priority src={heart} alt="Heart icon in nav" />
-        <Image priority src={cart} alt="Cart icon" />
-        <Image priority src={user} alt="User icon" />
+        <Image
+          className="cursor-pointer"
+          priority
+          src={heart}
+          alt="Heart icon in nav"
+        />
+        <Image className="cursor-pointer" priority src={cart} alt="Cart icon" />
+        <Image className="cursor-pointer" priority src={user} alt="User icon" />
       </div>
 
       <div
         className={`${
           isOpen
             ? "fixed opacity-1 translate-y-0"
-            : "opacity-0 translate-y-full"
+            : "opacity-0 translate-y-[500px]"
         } top-0 left-0 w-full h-1/2 bg-white z-20 transform transition-transform duration-300 ease-in-out`}
       >
         <div className="absolute top-3 left-5">
